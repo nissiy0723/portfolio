@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>リスト追加</title>
+    </head>
+    <style>
+        body {
+            font-family:sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .iroiro {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color:#fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .iroiro h1 {
+           text-align: center;
+           color: #333;
+        }
+        .input {
+            padding:8px;
+            width: 60%;
+        }
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+            margin-left: 6px;
+        }
+        #addBtn {
+            background :#2563eb;
+            color:#fff;
+            border:none;
+            border-radius:4px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            background:#f9f9f9;
+        
+        }
+
+        li span {
+            flex: 1;
+        }
+
+        #doneBtn {
+            background: #10b981;
+            color: #0f0d0d;
+            border: none;
+            border-radius: 4px;
+        }
+        #deleteBtn {
+            background: #95cfda;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        #message {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+    <body>
+        <div class="iroiro">
+
+       <h1>やることリスト</h1>
+       <p><a href="3index.html">自己紹介ページ</a></p>
+       <input id="textInput" type="text" placeholder="入力してください">
+       <button id="addBtn">追加</button> 
+        <p id="message"></p>
+        <ul id="list"></ul>
+            <script src="dom-list.js"></script>
+            </div>
+    </body>
+</html>
