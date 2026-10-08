@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>カウンター</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #c7c5c5;
+        }
+        header {
+            text-align: center;
+            border-bottom: 1px solid #838181;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .container p {
+            font-size: 50px;
+            margin: 20px 0;
+            border : 1px solid #929191;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 35px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        button.plus {
+            background-color: #f78585;
+            color: rgb(2, 2, 2);
+            border-radius: 10px;
+            padding: 25px 50px;
+        }
+        button.minus {
+            background-color: #bde7ff;
+            color: rgb(2, 2, 2);
+            border-radius: 10px;
+            padding: 25px 50px;
+        }
+        button:hover {
+            opacity: 0.6;
+        }
+    </style>
+
+    <body>
+        <header>
+            <h1>カウンター</h1>
+        </header>
+        <div class="container">
+            <p id="number">0</p>
+        
+        <button id="plus"class="plus">+1</button>
+        <button id="minus"class="minus">-1</button>
+        <button id="reset"class="reset">リセット</button>
+        <script src="counter.js"></script>
+    </div>
+</body>
+</html>
