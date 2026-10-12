@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>クイズ</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #result {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+</style>
+<body>
+  <h1>クイズ</h1>
+  <p id="score">スコア: 0</p>
+  <p id="question"></p>
+
+  <button class="choice">A</button>
+  <button class="choice">B</button>
+  <button class="choice">C</button>
+
+  <p id="result"></p>
+
+  
+  <button id="retry">もう一度</button>
+<button id="next">次へ</button>
+  <script src="quiz.js"></script>
+</body>
+</html>
