@@ -8,7 +8,9 @@
 ## 作品
 - 自己紹介ページ　(`3index.html`)
 - やることリスト　(`dom-list.html`)
-
+- カウンター　　　(`counter.html`)
+- クイズ　　　　　(`quiz.html`)
+- 数当て　　　　　(`guess.html`)
 ## 使っている場所
 - HTML
 - CSS
