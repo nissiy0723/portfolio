@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>BMI計算ツール</title>
+        <style>
+            body {
+                font-family:"Helvetica Neus", Arial, "Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo, sans-serif;
+                background-color: #f5f7fa;
+                color: #333;
+                line-height: 1.6;
+                padding:40px 20px;
+            }
+
+            .container {
+                max-width:400px;
+                margin:0 auto;
+                background: #fff;
+                padding:32px;
+                border-radius:12px;
+                box-shadow:0 4px 12px rgba(0,0,0,0.08)
+            }
+            h1 {
+                font-size:24px;
+                margin-bottom: 28px;
+                text-align: center;
+                color: #222;
+            }
+            label {
+                display:block;
+                font-size:14px;
+                font-weight: 600;
+                margin-bottom:6px;
+                color:#555;
+            }
+            input {
+                width:100%;
+                padding:12px 14px;
+                font-size:16px;
+                border:1px solid #ddd;
+                border-radius: 8px;
+                transition: border-color 0.2s;
+            }
+            input:focus {
+                outline: none;
+                border-color: #4a90e2;
+            }
+
+            button {
+                width:100%;
+                padding:14px;
+                font-size:16px;
+                font-weight:600;
+                color:#fff;
+                background-color: #4a90e2;
+                border:none;
+                border-radius:8px;
+                cursor:pointer;
+                transition: background-color 0.2s;
+                margin-top: 8px;
+            }
+            button:hover {
+                background-color: #357abd;
+            }
+
+            .result {
+                margin-top:24px;   
+                padding:16px;
+                background-color:#f0f7ff;
+                border-radius:8px;
+                text-align: center;
+                font-size: 18px;
+                font-weight:500;
+                min-height:28px;
+             }
+        </style>
+    </head>
+    <body>
+            
+        <div class="container">
+    <h1>BMI計算ツール</h1>
+            <label>身長:<input id="height" type=number></label>
+            <label>体重:<input id="weight" type=number></label>
+            <button id="calcBtn">計算</button>
+
+            <p id="result" class="result"></p>
+
+            <p><a href=3index.html>自己紹介ページ</a></p>
+
+            <script src="bmi.js"></script>
+        </div>
+    </body>
+</html>
