@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>カウントダウン</title>
+        <style>
+            body {
+                font-family:"Helvetica Neus", Arial, "Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo, sans-serif;
+                padding: 40px 20px;
+                background-color: #f5f7fa;
+                color: #333;
+                line-height: 1.6;
+            }
+            .container {
+                width: 400px;
+                margin:0 auto;
+                box-shadow:0 4px 12px rgba(0,0,0,0.08) ;
+                padding:32px;                
+                background-color:#fff;
+                border-radius:12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>カウントダウン</h1>
+            <label>秒数: <input id="secoundInput" type="Number" min="1" value="10"></label>
+            <button id="start">スタート</button>
+            <button id="stop">ストップ</button>
+
+            <p>残り: <span id="display">-</span></p>
+
+            <p><a href="3index.html">自己紹介ページ</a></p>
+            <script src="countdown.js"></script>
+        </div>
+    </body>
+</html>
