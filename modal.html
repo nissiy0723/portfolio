@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>モーダル</title>
+        <style>
+            .modal {
+                display:none;
+                position:fixed;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0,0, 0.5)
+            }
+            .modal.open {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .modal-content {
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>モーダル</h1>
+        <button id="openBtn">開く</button>
+        <div id="modal"class="modal">
+            <div class="modal-content">
+                <p>こんにちはモーダルです</p>
+                <button id="closeBtn">閉じる</button>
+            </div>
+        </div>
+        <p><a href="3index.html">自己紹介ページ</a></p>
+        <script src="modal.js"></script>
+    </body>
+</html>
