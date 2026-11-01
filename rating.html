@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>星評価</title>
+        <style>
+            .star {
+                font-size: 32px;
+                cursor: pointer;
+                color: #ccc;
+            }
+            .star.active {
+                color: #f5a623;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>星評価</h1>
+
+        <div id="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <p>評価: <span id="score">0</span></p>
+        <p><a href="3index.html">自己紹介ページ</a></p>
+        <script src="rating.js"></script>
+    </body>
+</html>
