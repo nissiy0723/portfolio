@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ドロップダウン</title>
+        <style>
+            .dropdown {
+                display: inline-block;
+                position: relative;
+            }
+            .menu {
+                display:none;
+                position:absolute;
+                top:100%;
+                left: 0;
+                background: #fff;
+                border: 1px solid #ccc;
+                min-width: 140px;
+
+            }
+            .menu.open {
+                display:block;
+            }
+            .menu a {
+                display: block;
+                padding: 8px 12px;
+                text-decoration: none;
+                color:#333;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>ドロップダウン</h1>
+
+        <div class="dropdown" id="dropdown">
+            <button id="menuBtn">メニュー ▼</button>
+            <div class="menu"id="menu">
+                <a href="#">項目1</a>
+                <a href="#">項目2</a>
+                <a href="#">項目3</a>
+
+            </div>
+        </div>
+        <p><a href="3index.html"></a></p>
+        <script src="dropdown.js"></script>
+    </body>
+</html>
