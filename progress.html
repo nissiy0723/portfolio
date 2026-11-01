@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>プログレスバー</title>
+        <style>
+            .bar-bg {
+                width: 300px;
+                height: 24px;
+                background: #ddd;
+                border-radius:8px;
+                overflow: hidden;
+            }
+            .bar-fill {
+                width: 0%;
+                height: 100%;
+                background: #4caf50;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>プログレスバー</h1>
+        <div class="bar-bg">
+        <div id="bar" class="bar-fill"></div>
+            
+    </div>
+
+    <p id="label">0%</p>
+
+    <button id="plusBtn">+10%</button>
+    <button id="minusBtn">-10%</button>
+    <button id="resetBtn">リセット</button>
+    <p><a href="3index.html">自己紹介ページ</a></p>
+    <script src="progress.js"></script>
+    </body>
+</html>
