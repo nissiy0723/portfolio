@@ -3,18 +3,127 @@
     <head>
         <meta charset="UTF-8">
         <title>3日予想</title>
+        <style>
+            * {
+    box-sizing: border-box;
+}
+    body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+
+/* ====================
+   ② メインコンテナ
+==================== */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+/* ====================
+   ③ 見出し
+==================== */
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+/* ====================
+   ④ 入力欄
+==================== */
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+/* ====================
+   ⑤ ボタン
+==================== */
+
+button {
+    padding: 10px 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 12px 8px;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+
+/* ====================
+   ⑥ リスト
+==================== */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f5f7fa;
+    border-radius: 6px;
+}
+
+
+/* ====================
+   ⑦ スマホ対応
+==================== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+}
+        </style>
     </head>
     <body>
+            <div class="container">
         <h1>3日予想</h1>
 
         <input id="city" type="text" placeholder="例: Tokyo">
         <button id="btn">検索</button>
+        <button id="favBtn">お気に入り追加</button>
 
         <p id="status"></p>
         <h2 id="place"></h2>
         <ul id="list"></ul>
+        <ul id="favList"></ul>
 
         <p><a href ="3index.html">自己紹介ページ</a></p>
         <script src="forecast.js"></script>
+    </div>
     </body>
 </html>
