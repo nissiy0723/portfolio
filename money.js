@@ -7,6 +7,13 @@ const total=document.getElementById("total");
 
 let items=[];
 
+function load() {
+    items=JSON.parse(localStorage.getItem("moneyItems")) || []
+};
+
+function save() {
+localStorage.setItem("moneyItems",JSON.stringify(items))
+};
 
 
 function render(){
@@ -22,7 +29,9 @@ function render(){
         deleteBtn.textContent="削除";
         deleteBtn.addEventListener("click", ()=> {
             items.splice(index,1);
+            
             render();
+            save()
         });
         li.appendChild(deleteBtn);
         list.appendChild(li);
@@ -32,6 +41,9 @@ function render(){
     });
     total.textContent=sum;
 }
+
+load();
+render();
 addBtn.addEventListener("click", ()=> {
     const titles=title.value.trim();
     const money=Number(amount.value);
@@ -42,7 +54,8 @@ addBtn.addEventListener("click", ()=> {
 
    title.value="";
     amount.value="";
+   
     render();
+    save()
 
-
-})
+});
