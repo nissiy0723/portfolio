@@ -19,7 +19,6 @@
 - CSS
 - JavaScript
 
-## できること
-- 追加
-- 完了 / 戻す
-- 削除
+## 公開ページ
+https://nissiy0723.github.io/portfolio/
+
