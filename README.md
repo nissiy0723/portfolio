@@ -11,6 +11,9 @@
 - カウンター　　　(`counter.html`)
 - クイズ　　　　　(`quiz.html`)
 - 数当て　　　　　(`guess.html`)
+- ポモドーロ      (`pomodoro.html`)
+- ポケモン図鑑    (`pokemon.html`)
+- 3日予想        (`forecast.html`)
 ## 使っている場所
 - HTML
 - CSS
