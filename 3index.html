@@ -1,170 +1,217 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>中級編完了</title>
-            <style>
-                .html,body {
-                    height:100%;
-                    margin:0;
-                    padding:0;
-                }
-                body {
-                    display:flex;
-                    flex-direction: column;
-                    min-height:100vh;
-                }
-                .header-left {
-                    float:left;
-                }
-                .header-right {
-                    float:right;
-                    padding:20px 40px 0 0;
-                }
-                .header-left h1{
-                    line-height:20px;
-                    padding-left:20px;
-                }
-                .headerr {
-                    background-color:aqua;
-                    height: 20px;
-                    
-                
-                    
-                }
-                .header-right a {
-                    margin:20px;
-                }
-                header {
-                    width:100%;
-                    border-bottom:1px solid rgb(136, 133, 133);
-                    height: 60px;
-                }
-                        .top-wrapper {
-                            height: 220px;
-                           margin:0 auto;
-                            max-width: 1200px;
-                            width:100%;
-                            text-align: center;
-                        }
-                        .container h1{
-                            font-size:80px;
-                        }
-                        .container p {
-                            font-size:  20px;
-                            border-bottom:1px dotted rgb(90, 89, 89);
-                            padding-bottom: 30px;
-                        }
-                        .moku h2 {
-                            color:rgb(90, 124, 124);
-                            
-                        }
-                        li::marker {
-                            color:rgb(91, 126, 126);
-                        }
-                        .moku {
-                            max-width: 1200px;
-                            width:100%;
-                            margin:0 auto;
-                            border-bottom: 1px dotted rgb(90, 89, 89);
-                        }
-                        .contents {
-                           max-width: 1200px;
-                            width:100%;
-                            margin:0 auto;
-                            list-style: none;
-                            
-                        }
-                        .contents h2{
-                                    color: rgb(102, 150, 150);
-                        }
-                        footer {
-                            background-color:rgb(238, 234, 234);
-                        }
-                        .cont {
-                            border-top:1px solid rgb(141, 140, 140);
-                            text-align: center;
-                            padding-bottom:10px;
-                            color: rgb(116, 114, 114);
-                        }
-                        .contenter li{
-                            list-style: none;
-                        }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
 
-            </style>
-            
-            <body>
-                <div class="headerr"></div>
-        <header>
-            <div class="header-left">
-       
-            <h1>自己紹介ページ</h1>
-         </div>
-         <div class="header-right">
-            <a href="#">ホーム</a>
-            <a href="#">目標</a>
-            <a href="#">学習記録</a>
-         </div>
-        </header>
-        <div class="top-wrapper">
-                <div class="container">
-                    <h1>西松です</h1>
-                    <p>フロントエンドエンジニアを目指して学習中です。</p>
-                </div>
+/* 全体 */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.7;
+}
 
-        </div>
-        <div class="moku">
-            <h2>🚩目標</h2>
-            <ul>
-                <li>半年後を目安に、現場で使えるレベルのプログラミングスキルを身につける</li>
-                <li>HTML/CSS,JavaScript、データベースの基本をしっかり理解する</li>
-                <li>ポートフォリオを作成して、成果物を形にしていく</li>
-            </ul>
-        </div>
-        <div class="contents">
-            <div class="contenter">
-            <h2>📖学習記録</h2>
-            <ul>
-                <li>▶HTML/CSS 初級完了</li>
-                <li>▶HTML/CSS 中級編完了</li>
-                <li>▶自己紹介ページ作成中</li>
-                <li>TODOアプリに保存機能(localStorage)を追加する</li>
-                <li>GitHubに作品を整理して公開準備</li>
-            </ul>
-        </div>
-        <h2>作品</h2>
-        <ul>
-            <li><a href="dom-list.html">やることリスト(TODO)</a>
-            <p>追加・完了・削除・保存ができるアプリ</p>
-            <a href="counter.html">カウンター</a>
-            <p>増減・リセット、色の変化があるカウンター</p>
-            <a href="quiz.html">クイズ</a>
-            <p>選択肢クイズ（やり直し機能付き）</p>
-            <a href="guess.html">数当てゲーム</a>
-            <p>1~100の数字の中から正解を探すゲーム</p>
-            <a href="pomodoro.html">ポモドーロ</a>
-            <p>25分カウントダウン</p>
-            <a href="money.html">かんたん家計簿</a>
-            <p>支出の追加・削除・合計・保存</p>
-            <a href="forecast.html">3日予想</a>
-            <p>三日間の気温予想を表示する</p>
-            <a href="pokemon.html">ポケモン図鑑</a>
-            <p>番号や名前から検索する</p>
-            </li>
-        </ul>
-        
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
 
-        
-        </div>
-        <footer>
-            <div class="cont">
-                <p>© 2024 西松の自己紹介ページ</p>
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #467c7c;
+    text-decoration: none;
+}
+
+/* トップ */
+.top {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e4f1f1;
+}
+
+/* 共通コンテナ */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* 見出し */
+h2 {
+    color: #467c7c;
+    border-bottom: 2px solid #467c7c;
+    padding-bottom: 10px;
+}
+
+/* リスト */
+li {
+    margin-bottom: 10px;
+}
+
+/* 作品カード */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card a {
+    color: #467c7c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    color: #666;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .top {
+        padding: 40px 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+        <h1>自己紹介ページ</h1>
+
+        <nav>
+            <a href="#home">ホーム</a>
+            <a href="#goal">目標</a>
+            <a href="#study">学習記録</a>
+            <a href="#works">作品</a>
+        </nav>
+    </header>
+
+    <!-- トップ -->
+    <main>
+        <section class="top" id="home">
+            <div class="container">
+                <h1>西松です</h1>
+                <p>フロントエンドエンジニアを目指して学習中です。</p>
             </div>
-        </footer>
+        </section>
 
-            </body>
+        <!-- 目標 -->
+        <section class="container" id="goal">
+            <h2>🚩目標</h2>
 
-    
+            <ul>
+                <li>半年後を目安に、現場で使えるスキルを身につける</li>
+                <li>HTML/CSS、JavaScript、データベースの基本を理解する</li>
+                <li>ポートフォリオを作成する</li>
+            </ul>
+        </section>
+
+        <!-- 学習記録 -->
+        <section class="container" id="study">
+            <h2>📖学習記録</h2>
+
+            <ul>
+                <li>HTML/CSS 初級完了</li>
+                <li>HTML/CSS 中級編完了</li>
+                <li>自己紹介ページ作成中</li>
+                <li>TODOアプリに保存機能を追加</li>
+                <li>GitHubに作品を公開準備</li>
+            </ul>
+        </section>
+
+        <!-- 作品 -->
+        <section class="container" id="works">
+            <h2>作品</h2>
+
+            <div class="card">
+                <a href="dom-list.html">やることリスト(TODO)</a>
+                <p>追加・完了・削除・保存ができるアプリ</p>
+            </div>
+
+            <div class="card">
+                <a href="counter.html">カウンター</a>
+                <p>増減・リセット、色の変化があるカウンター</p>
+            </div>
+
+            <div class="card">
+                <a href="quiz.html">クイズ</a>
+                <p>選択肢クイズ（やり直し機能付き）</p>
+            </div>
+
+            <div class="card">
+                <a href="guess.html">数当てゲーム</a>
+                <p>1〜100の数字の中から正解を探すゲーム</p>
+            </div>
+
+            <div class="card">
+                <a href="pomodoro.html">ポモドーロ</a>
+                <p>25分カウントダウン</p>
+            </div>
+
+            <div class="card">
+                <a href="money.html">かんたん家計簿</a>
+                <p>支出の追加・削除・合計・保存</p>
+            </div>
+
+            <div class="card">
+                <a href="forecast.html">3日予報</a>
+                <p>三日間の気温予想を表示する</p>
+            </div>
+
+            <div class="card">
+                <a href="pokemon.html">ポケモン図鑑</a>
+                <p>番号や名前から検索する</p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p>© 2026 西松の自己紹介ページ</p>
+    </footer>
+
+</body>
 </html>
