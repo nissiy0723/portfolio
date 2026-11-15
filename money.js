@@ -7,6 +7,7 @@ const type=document.getElementById("type");
 const filterAll=document.getElementById("filterAll");
 const filterIncome = document.getElementById("filterIncome");
 const filterExpense=document.getElementById("filterExpense");
+const statusEl=document.getElementById("status")
 let items=[];
 
 function load() {
@@ -42,10 +43,14 @@ function render(){
         deleteBtn.textContent="削除";
         deleteBtn.addEventListener("click", ()=> {
             items=items.filter((x) => x.id !==item.id);
-            
+            statusEl.textContent="削除しました";
+            setTimeout(()=> {
+                statusEl.textContent="";
+            },2000);
             save();
+              
             render();
-            
+          
         });
         li.appendChild(deleteBtn);
         list.appendChild(li);
@@ -81,7 +86,7 @@ addBtn.addEventListener("click", ()=> {
 
    title.value="";
     amount.value="";
-   
+ 
     
     save()
     render();
