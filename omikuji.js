@@ -7,4 +7,12 @@ drawBtn.addEventListener("click",()=> {
 const index= Math.floor(Math.random() * fortunes.length);
 result.textContent=fortunes[index];
 
-})
+if(fortunes[index]===fortunes[0]){
+result.style.color="red";
+result.textContent="大吉です!めっちゃ運がいいよ!";
+}else{
+    result.style.color="";
+};
+
+
+});

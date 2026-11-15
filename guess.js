@@ -27,5 +27,6 @@ resetBtn.addEventListener("click",()=> {
 
 
 
-})
+});
+
 

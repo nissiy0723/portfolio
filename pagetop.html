@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ページトップ</title>
+        <style>
+            body {
+                min-height: 2000px;
+            }
+            #pageTop {
+                position: fixed;
+                right: 20px;
+                bottom: 20px;
+                display: none;
+            }
+            #pageTop.show {
+                display: block;
+            }
+             </style>
+        </head>
+        <body>
+            <h1>トップへ戻る</h1>
+            <p>下にスクロールしてください</p>
+            <p>(ここに適当な文章を何行か書いてOK)</p>
+
+            <button id="pageTop">トップ</button>
+            <p><a href="index.html">自己紹介ページ</a></p>
+            <script src="pagetop.js"></script>
+        </body>

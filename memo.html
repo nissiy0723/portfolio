@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>メモ</title>
+    </head>
+    <style>
+       body {
+  font-family: sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+#memoinput {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#memoinput:focus {
+  outline: none;
+  border-color: #6c8cff;
+}
+
+#addBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c8cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#addBtn:hover {
+  background-color: #5275e8;
+}
+
+#message {
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+#memoList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#memoList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f8f9fc;
+  border: 1px solid #e8ebf2;
+  border-radius: 8px;
+}
+
+#memoList li span {
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+
+#memoList li button {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#memoList li button:hover {
+  background-color: #e74c3c;
+}
+
+
+    </style>
+    <body>
+  <div class="container">
+        <h1>メモ</h1>
+            <input id="memoinput" type="text" placeholder="メモを入力">
+            <button id="addBtn">追加</button>
+            <p id="message"></p>
+            <ul id="memoList"></ul>
+            <p><a href="index.html">自己紹介ページに戻る</a></p>
+            <script src="memo.js"></script>
+        </div>
+    </body>

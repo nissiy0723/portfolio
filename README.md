@@ -6,7 +6,7 @@
 西下　(学習開始　: 2026年8月末~)
 
 ## 作品
-- 自己紹介ページ　(`3index.html`)
+- 自己紹介ページ　(`index.html`)
 - やることリスト　(`dom-list.html`)
 - カウンター　　　(`counter.html`)
 - クイズ　　　　　(`quiz.html`)

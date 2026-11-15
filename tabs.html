@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>タブ</title>
+        <style>
+            .tab-btn.active {
+                font-weight: bold;
+                border-bottom: 2px solid #333;
+
+            }
+            .panel {
+                display:none;
+
+            }
+            .panel.active {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>タブの切り替え</h1>
+        <div class="BTN">
+            <button class="tab-btn active" data-tab="profile">プロフィール</button>
+            <button class="tab-btn" data-tab="hobby">趣味</button>
+            <button class="tab-btn" data-tab="contact">連絡先</button>
+        </div>
+        <div id="profile" class="panel active">
+            <p>名前: 西下 / 学習中</p>
+        </div>
+        <div id="hobby" class="panel">
+            <p>趣味: ゲーム</p>
+        </div>
+        <div id="contact" class="panel">
+            <p>連絡先: example@email.com</p>
+        </div>
+        
+        <p><a href="index.html"></a></p>
+
+        <script src="tabs.js"></script>
+    </body>
+</html>

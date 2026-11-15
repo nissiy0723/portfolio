@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOMテスト</title>
+
+    </head>
+    <style>
+        body {
+            font-family:sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        };
+        .iroiro {
+            max-width: 500px;
+            margin: 0 auto;
+            background:#fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .iroiro h1 {
+           text-align: center;
+           color: #333;
+        }
+
+        input {
+            padding:8px;
+            width: 60%;
+        }
+        button {
+            padding: 8px 12px;
+            margin-left: 6px;
+            cursor: pointer;
+        }
+        #addBtn
+
+    </style>
+    <body>
+        <header>
+        <h1 id="title">西下</h1>
+        <button id="btn">押す</button>
+        </header>
+        <div class="iroiro">
+            <h1>入力した文字を表示</h1>
+            <input id="textinput" type="text" placeholder="">
+            <button id="btnn">表示する</button>
+            <p id="result">ここに結果が出ます</p>
+            <script src="dom-test.js"></script>
+        </div>
+    </body>
+</html>
