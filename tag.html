@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>タグ付きメモ</title>
+        <style>
+            
+            
+/* ページ全体 */
+body {
+    font-family: sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 入力欄 */
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+/* 入力欄をクリックしたとき */
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* 追加ボタン */
+button {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ボタンにマウスを乗せたとき */
+button:hover {
+    background-color: #357abd;
+}
+
+/* 絞り込み部分 */
+div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* セレクトボックス */
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* メモ一覧 */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* メモ1つずつ */
+li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* 自己紹介ページへのリンク */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+            
+        </style>
+    </head>
+    <body>
+        <h1>タグ付きメモ</h1>
+
+    <input id="memo" type="text" placeholder="メモ">
+    <input id="tag" type="text"  placeholder="タグ">
+    <button id="addBtn">追加</button>
+    <div>
+
+        絞り込み:
+        <select id="tagFilter">
+            <option value="all">すべて</option>
+             
+        </select>
+    
+    </div>
+
+    <ul id="noteList"></ul>
+    <p><a href=index.html>自己紹介ページ</a></p>
+    <script src="tag.js"></script>
+    </body>
+</html>
