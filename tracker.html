@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>習慣トラッカー</title>
+        <style>
+            /* 全体 */
+body {
+    font-family: sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* メイン部分 */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 入力欄 */
+#textInput {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* 追加ボタン */
+#addBtn {
+    display: block;
+    margin: 0 auto 25px;
+    padding: 10px 30px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addBtn:hover {
+    background-color: #357abd;
+}
+
+/* メモ一覧 */
+#data {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* メモ1つずつ */
+#data li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* メモの文字 */
+#data li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+/* チェック・削除ボタン */
+#data li button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* 削除ボタン */
+#data li button:last-child {
+    background-color: #e57373;
+    color: white;
+}
+
+#data li button:last-child:hover {
+    background-color: #d9534f;
+}
+
+/* 自己紹介ページへのリンク */
+p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+        </style>
+    </head>
+    <body>
+        <h1>習慣トラッカー</h1>
+
+        <input id="textInput" type="text" placeholder="ここに入力">
+        <button id="addBtn">追加</button>
+
+        <ul id="data"></ul>
+
+        <p><a href="index.html">自己紹介ページ</a></p>
+        <script src="tracker.js"> </script>
+    </body>
+</html>
