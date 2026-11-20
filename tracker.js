@@ -1,7 +1,7 @@
 const Input=document.getElementById("textInput");
 const addBtn=document.getElementById("addBtn");
 const memo=document.getElementById("data");
-
+const count=document.getElementById("count");
 let data=[]
 
 function save() {
@@ -15,10 +15,12 @@ function load() {
 function render() {
     memo.innerHTML="";
 
+    let donecount=0
+
 
     data.forEach((d)=> {
-        const li=document.createElement("li");
-       
+         if(d.done===true){donecount++;
+         };
 
         //チェック用ボタン
         const checkBtn=document.createElement("button");
@@ -38,14 +40,22 @@ function render() {
             save();
             render();
         });
+        
+        const li=document.createElement("li");
+
+      
+      
+
+
         li.appendChild(checkBtn);
          li.appendChild(span);
         li.appendChild(deleteBtn);
         memo.appendChild(li);
         
-    })
-};
+    }) 
+    count.textContent=donecount+ " / " + data.length;
 
+};
 
 
 
