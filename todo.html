@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ToDoリスト</title>
+        <link rel="stylesheet" href="todo.css">
+        <style>
+/* 全体 */
+body {
+    font-family: sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* タイトル */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 入力欄 */
+#textInput {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* ボタン共通 */
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* ボタンを押したとき */
+button:hover {
+    opacity: 0.8;
+}
+
+/* メッセージ */
+#message {
+    color: #e74c3c;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+/* リスト全体 */
+#list {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* リスト1件 */
+#list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* タスクの文字 */
+#list li span {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+/* 削除ボタン */
+#list li button {
+    flex-shrink: 0;
+    background-color: #e74c3c;
+    margin: 0;
+}
+
+/* 完了済み */
+#list li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* 自己紹介ページへのリンク */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>ToDoリスト</h1>
+        <input id="textInput" type="text" placeholder="ここに入力">
+        <button id="addBtn">追加</button>
+        <button id="all">すべて</button>
+        <button id="m">未完了</button>
+        <button id="k">完了済み</button>
+        <p id="message"></p>
+        <ul id="list"></ul>
+
+        <p><a href="index.html">自己紹介ページ</a></p>
+
+        <script src="todo.js"></script>
+
+
+    </body>
+</html>
